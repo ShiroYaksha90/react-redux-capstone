@@ -1,0 +1,23 @@
+input {
+    background-color: #ec4c8a;
+    color: #fef6fa;
+    border: none;
+}
+
+select {
+    background-color: #ec4c8a;
+    color:#fef6fa;
+    border: none;
+}
+
+::placeholder {
+    color: #fef6fa;
+}
+
+svg {
+    font-size: small;
+}
+
+  option:not(:first-of-type) {
+    color: #fef6fa;
+  }
