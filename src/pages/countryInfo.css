@@ -1,0 +1,43 @@
+.details-container svg {
+    margin: 0.4em;
+    font-size: xxx-large;
+}
+
+.details-content {
+    display: flex;
+  gap: 50px;
+  margin: 0 2em;
+  color: #fefefe;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.right h3 {
+    font-size:xxx-large;
+}
+
+.details {
+    font-size: x-large;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.border p {
+    display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.border a {
+    color: #fefefe;
+}
+
+.border a:hover {
+    background-color: #fe146d;
+}
