@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 5px;
-    margin: 5px;
+    padding: 2rem;
+    background-color: #fe146d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .home {
@@ -15,7 +16,7 @@
 
 svg {
     color: #fef6fa;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .home h2 {

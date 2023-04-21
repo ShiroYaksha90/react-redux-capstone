@@ -1,21 +1,21 @@
-input {
-    background-color: #ec4c8a;
-    color: #fef6fa;
-    border: none;
+.input-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1em;
 }
 
 select {
     background-color: #ec4c8a;
-    color:#fef6fa;
-    border: none;
+    color: #fef6fa;
+    font-size: x-large;
+    border-color:  #fd7caea1;
+    margin: 1rem;
+    padding: 10px;
+    font-weight: 900;
 }
 
 ::placeholder {
     color: #fef6fa;
-}
-
-svg {
-    font-size: small;
 }
 
   option:not(:first-of-type) {

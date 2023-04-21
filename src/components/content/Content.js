@@ -30,7 +30,7 @@ const Content =()=> {
           key={id}
           to={`/${country.cca3}`}
         >
-          <img src={country.flags.svg} alt={country.flags.alt} className="card-image" />
+          <img src={country.flags.png} alt={country.flags.alt} className="card-image" />
           <div className="info">
             <h3>{country.name.common}</h3>
             <p>
