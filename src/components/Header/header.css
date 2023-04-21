@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+    margin: 5px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+svg {
+    color: #fef6fa;
+    font-size: larger;
+}
+
+.home h2 {
+    color: #fef6fa;
+    padding: 0;
+    margin: 0;
+}
