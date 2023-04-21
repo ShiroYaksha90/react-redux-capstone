@@ -56,24 +56,22 @@ const CountryInfo = () => {
 
                 <div className="info-right">
                   <p>
-                    Currencies:
-                    <span>
+                    Currencies: <span>
                       {Object.values(countryInfo[0].currencies)
                         .map((item) => {
                           return item.name;
                         })
-                        .join(",")}
+                        .join(", ")}
                     </span>
                   </p>
 
                   <p>
-                    Languages:
-                    <span>
+                    Languages:  <span>
                       {Object.values(countryInfo[0].languages)
                         .map((item) => {
                           return item;
                         })
-                        .join(",")}
+                        .join(", ")}
                     </span>
                   </p>
                 </div>
