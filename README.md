@@ -60,7 +60,9 @@ This project utilizes an API to retrieve information about countries and contine
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+- [Live link](https://my-world-sems.onrender.com/)
+
+- [loom presentation](https://www.loom.com/share/cab14e2069e44958b36f8b4952be223a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
