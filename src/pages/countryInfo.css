@@ -1,41 +1,51 @@
 .details-container svg {
   margin: 0.4em;
-  font-size: xxx-large;
+  font-size: large;
 }
 
 .details-content {
   display: flex;
-  gap: 50px;
-  margin: 0 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0 1em;
   color: #fefefe;
+  margin-bottom: 1em;
+}
+
+.details-content > img {
+  width: 40%;
+  height: 170px;
 }
 
 .right {
   display: flex;
-  align-items: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .right h3 {
-  font-size: xxx-large;
+  font-size: larger;
 }
 
 .details {
-  font-size: x-large;
+  font-size: medium;
   line-height: 1.5;
   font-weight: 600;
 }
 
 .border p {
   display: flex;
-  flex-direction: column;
-  font-size: x-large;
+  gap: 5px;
+  align-items: baseline;
+  font-size: medium;
   line-height: 1.5;
   font-weight: 600;
 }
 
 .border a {
   color: #fefefe;
+  font-size: small;
 }
 
 .border a:hover {
