@@ -8,9 +8,9 @@ import CountryInfo from './pages/CountryInfo';
 function App() {
   return (
     <Routes>
-      <Route exact path='/' element={<Header />}>
-        <Route index element={<Home />}></Route>
-        <Route path="/:code" element={<CountryInfo />}></Route>
+      <Route exact path="/" element={<Header />}>
+        <Route index element={<Home />} />
+        <Route path="/:code" element={<CountryInfo />} />
       </Route>
     </Routes>
   );
