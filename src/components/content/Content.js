@@ -5,19 +5,15 @@ import { getCountries, searachByRegion } from '../../redux/features/countriesSli
 import { Link } from 'react-router-dom'
 
 const Content =()=> {
-    const { countriesArray, loading, error, success, region } = useSelector((state) => state.country)
+    const { countriesArray, loading, success, region } = useSelector((state) => state.country)
     const dispatch = useDispatch()
 
     useEffect(()=> {
-        dispatch(getCountries())
-
-        if(region){
-            dispatch(searachByRegion(region))
-        }
-        if(error){
-            console.log(error)
-        }
-    }, [dispatch, error , success, region])
+      
+      if(region){
+          dispatch(searachByRegion(region))
+      }else{dispatch(getCountries())}
+    }, [dispatch, success, region])
 
     return(
         <section className='main-container'>
