@@ -1,7 +1,8 @@
 .main-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     margin: 2%;
 }
 
@@ -11,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: inset -100vw -100vh rgba(252, 49, 3, 0.59); */
 }
 
 .info {
