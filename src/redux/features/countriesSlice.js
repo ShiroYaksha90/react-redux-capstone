@@ -1,32 +1,34 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from 'axios'
 
 export const getCountries = createAsyncThunk("countries/getCountries", async (_,thunkAPI)=> {
     try{
-        const response = await axios.get('https://restcountries.com/v3.1/all')
-        return response.data
+        const response = await fetch('https://restcountries.com/v3.1/all')
+        const data = response.json();
+    return data;
     }catch(error){
-        const message = (error.response && error.response.data)
+        const message = ( Promise.reject(error))
         return thunkAPI.rejectWithValue(message)
     }
 })
 
 export const search = createAsyncThunk("countries/search", async(code,thunkAPI)=>{
     try{
-        const response = await axios.get(`https://restcountries.com/v3.1/alpha/${code}`)
-        return response.data
+        const response = await fetch(`https://restcountries.com/v3.1/alpha/${code}`)
+        const data = response.json();
+        return data
     }catch(error){
-        const message = (error.response && error.response.data)
+        const message = ( Promise.reject(error))
         return thunkAPI.rejectWithValue(message)
     }
 })
 
 export const searachByRegion = createAsyncThunk("countries/searchByRegion", async (region,thunkAPI)=>{
     try{
-        const response = await axios.get(`https://restcountries.com/v3.1/region/${region}`)
-        return response.data
+        const response = await fetch(`https://restcountries.com/v3.1/region/${region}`)
+        const data = response.json();
+        return data
     }catch(error){
-        const message = (error.response && error.response.data)
+        const message = ( Promise.reject(error))
         return thunkAPI.rejectWithValue(message)
     }
 })
@@ -44,7 +46,6 @@ const countriesSlice = createSlice({
     name: 'countries',
     initialState: initialState,
     reducers: {
-        
         getRegion: (state,action) =>{
             state.region = action.payload
         },
