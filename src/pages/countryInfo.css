@@ -1,33 +1,33 @@
 .details-container svg {
-    margin: 0.4em;
-    font-size: xxx-large;
+  margin: 0.4em;
+  font-size: xxx-large;
 }
 
 .details-content {
-    display: flex;
+  display: flex;
   gap: 50px;
   margin: 0 2em;
   color: #fefefe;
 }
 
 .right {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .right h3 {
-    font-size:xxx-large;
+  font-size: xxx-large;
 }
 
 .details {
-    font-size: x-large;
-    line-height: 1.5;
-    font-weight: 600;
+  font-size: x-large;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .border p {
-    display: flex;
+  display: flex;
   flex-direction: column;
   font-size: x-large;
   line-height: 1.5;
@@ -35,9 +35,9 @@
 }
 
 .border a {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .border a:hover {
-    background-color: #fe146d;
+  background-color: #fe146d;
 }
