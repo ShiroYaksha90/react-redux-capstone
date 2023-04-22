@@ -7,7 +7,7 @@ const Input =()=>{
     const [region,setRegion]=useState('')
     const dispatch =useDispatch()
     useEffect(()=>{
-        if(region !== 0){
+        if(region !== ''){
             dispatch(getRegion(region))
         }
     },[dispatch,region])
