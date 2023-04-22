@@ -22,7 +22,7 @@ const Content = () => {
         countriesArray.length > 0 && countriesArray.map((country) => (
           <Link
             className="card"
-            key={country.idd.root}
+            key={country.cca3}
             to={`/${country.cca3}`}
           >
             <img src={country.flags.png} alt={country.flags.alt} className="card-image" />

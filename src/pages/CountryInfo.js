@@ -89,7 +89,7 @@ const CountryInfo = () => {
                   {
                   (countryInfo[0].borders) ? (
                     countryInfo[0].borders.map((item) => (
-                      <Link className="borders-links" to={`/${item}`} key={item.idd.root}>
+                      <Link className="borders-links" to={`/${item}`} key={item.cca3}>
                         {item}
                       </Link>
                     ))
