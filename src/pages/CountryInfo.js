@@ -6,18 +6,14 @@ import { search } from "../redux/features/countriesSlice";
 import { BiArrowBack } from "react-icons/bi";
 
 const CountryInfo = () => {
-  const { loading, countryInfo, error } = useSelector((state) => state.country);
+  const { loading, countryInfo } = useSelector((state) => state.country);
   const dispatch = useDispatch();
   const { code } = useParams();
-  console.log(code);
   useEffect(() => {
     if (code) {
       dispatch(search(code.toLowerCase()));
     }
-    if (error) {
-      console.log(error);
-    }
-  }, [dispatch, code, error]);
+  }, [dispatch, code]);
   return (
     <section className="details-container">
       <Link to="/">
