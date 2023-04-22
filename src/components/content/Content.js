@@ -11,7 +11,7 @@ const Content = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (region) {
+    if (region !== '') {
       dispatch(searachByRegion(region));
     } else { dispatch(getCountries()); }
   }, [dispatch, success, region]);
