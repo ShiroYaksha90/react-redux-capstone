@@ -22,11 +22,6 @@ const CountryInfo = () => {
       <div className="details-content">
         {loading ? (<h1>Loading....Please Wait</h1>) : countryInfo.length > 0 ? (
           <>
-            <img
-              src={countryInfo[0].flags.png}
-              alt="name"
-              className="details-image"
-            />
 
             <div className="right">
               <h3>{countryInfo[0].name.common}</h3>
@@ -90,7 +85,9 @@ const CountryInfo = () => {
                   (countryInfo[0].borders) ? (
                     countryInfo[0].borders.map((item) => (
                       <Link className="borders-links" to={`/${item}`} key={item.cca3}>
+
                         {item}
+                        ,
                       </Link>
                     ))
                   ) : (
