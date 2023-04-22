@@ -19,11 +19,10 @@ const Content = () => {
   return (
     <section className="main-container">
       {loading ? (<h1>Loading....Please Wait</h1>) : (
-        countriesArray.length > 0 && countriesArray.map((country, id) => (
-
+        countriesArray.length > 0 && countriesArray.map((country) => (
           <Link
             className="card"
-            key={id}
+            key={country.idd.root}
             to={`/${country.cca3}`}
           >
             <img src={country.flags.png} alt={country.flags.alt} className="card-image" />

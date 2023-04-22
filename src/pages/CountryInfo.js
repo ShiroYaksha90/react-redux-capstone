@@ -87,9 +87,9 @@ const CountryInfo = () => {
                 <p>
                   Border Countries:
                   {
-                  countryInfo[0].borders ? (
-                    countryInfo[0].borders.map((item, id) => (
-                      <Link className="borders-links" to={`/${item}`} key={id}>
+                  (countryInfo[0].borders) ? (
+                    countryInfo[0].borders.map((item) => (
+                      <Link className="borders-links" to={`/${item}`} key={item.idd.root}>
                         {item}
                       </Link>
                     ))
