@@ -62,7 +62,7 @@ This project utilizes an API to retrieve information about countries and contine
 
 - [Live link](https://my-world-sems.onrender.com/)
 
-- [loom presentation](https://www.loom.com/share/cab14e2069e44958b36f8b4952be223a)
+- [loom presentation](https://www.loom.com/share/523361c447b241c582e0c10af45bfdec)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
