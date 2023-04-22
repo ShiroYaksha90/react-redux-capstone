@@ -1,15 +1,13 @@
-import './home.css'
+import './home.css';
 
-import Input from '../components/Input/Input'
-import Content from '../components/content/Content'
+import Input from '../components/Input/Input';
+import Content from '../components/content/Content';
 
-const Home =()=> {
-    return(
-        <>
-        <Input />
-        <Content />
-        </>
-    )
-}
+const Home = () => (
+  <>
+    <Input />
+    <Content />
+  </>
+);
 
-export default Home
+export default Home;

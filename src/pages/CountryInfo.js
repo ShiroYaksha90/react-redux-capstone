@@ -1,9 +1,9 @@
-import "./countryInfo.css";
-import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { search } from "../redux/features/countriesSlice";
-import { BiArrowBack } from "react-icons/bi";
+import './countryInfo.css';
+import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { BiArrowBack } from 'react-icons/bi';
+import { search } from '../redux/features/countriesSlice';
 
 const CountryInfo = () => {
   const { loading, countryInfo } = useSelector((state) => state.country);
@@ -33,41 +33,51 @@ const CountryInfo = () => {
               <div className="details">
                 <div className="info-left">
                   <p>
-                    Offcial Name: <span>{countryInfo[0].name.official}</span>
+                    Offcial Name:
+                    {' '}
+                    <span>{countryInfo[0].name.official}</span>
                   </p>
                   <p>
-                    Population: <span>{countryInfo[0].population}</span>
+                    Population:
+                    {' '}
+                    <span>{countryInfo[0].population}</span>
                   </p>
                   <p>
-                    Contenint: <span>{countryInfo[0].continents}</span>
+                    Contenint:
+                    {' '}
+                    <span>{countryInfo[0].continents}</span>
                   </p>
 
                   <p>
-                    Time Zones: <span>{countryInfo[0].timezones[0]}</span>
+                    Time Zones:
+                    {' '}
+                    <span>{countryInfo[0].timezones[0]}</span>
                   </p>
                   <p>
-                    Capital: <span>{countryInfo[0].capital}</span>
+                    Capital:
+                    {' '}
+                    <span>{countryInfo[0].capital}</span>
                   </p>
                 </div>
 
                 <div className="info-right">
                   <p>
-                    Currencies: <span>
+                    Currencies:
+                    {' '}
+                    <span>
                       {Object.values(countryInfo[0].currencies)
-                        .map((item) => {
-                          return item.name;
-                        })
-                        .join(", ")}
+                        .map((item) => item.name)
+                        .join(', ')}
                     </span>
                   </p>
 
                   <p>
-                    Languages:  <span>
+                    Languages:
+                    {' '}
+                    <span>
                       {Object.values(countryInfo[0].languages)
-                        .map((item) => {
-                          return item;
-                        })
-                        .join(", ")}
+                        .map((item) => item)
+                        .join(', ')}
                     </span>
                   </p>
                 </div>
@@ -76,17 +86,18 @@ const CountryInfo = () => {
               <div className="border">
                 <p>
                   Border Countries:
-                  {countryInfo[0].borders ? (
-                    countryInfo[0].borders.map((item, id) => {
-                      return (
-                        <Link className="borders-links" to={`/${item}`} key={id}>
-                          {item}
-                        </Link>
-                      );
-                    })
+                  {
+                  countryInfo[0].borders ? (
+                    countryInfo[0].borders.map((item, id) => (
+                      <Link className="borders-links" to={`/${item}`} key={id}>
+                        {item}
+                      </Link>
+                    ))
                   ) : (
                     <span>No Boreder Countries</span>
-                  )}
+                  )
+                  }
+
                 </p>
               </div>
             </div>
